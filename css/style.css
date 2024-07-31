@@ -1,59 +1,135 @@
-/* Estilos gerais */
+/* geral */
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* reset */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  margin: 0;
+	margin: 0;
 }
 
-/* Estilos do formulário */
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+h1, h2, h3, h4, h5, p, span {
+	margin: 0;
+	color: #fff;
 }
 
-@media only screen and (max-width: 767px) {
-  form {
-    max-width: 90%;
-  }
+.container {
+	max-width: 1920px;
+	width: 100%;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+/* header */
+header {
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 50px;
-}
+/* navbar */
+nav {
+	position: fixed;
+	top: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #FFF;
+	border-bottom: 1px solid #CCC;
+ }
 
-input[type="text"] {
-  display: block;
-  width: 95%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
+ nav:after {
+ 	clear: both;
+ 	content: "";
+ 	display: block;
+ }
 
-button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: #4CAF50;
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-}
+ .nav-container {
+ 	max-width: 1200px;
+ 	position: relative;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
 
-button[type="submit"]:hover {
-  background-color: #3e8e41;
-}
+ #logo {
+ 	width: 170px;
+ 	height: 80px;
+ 	margin-top: 20px;
+ }
+
+ .nav-container ul {
+ 	float: right;
+ 	height: 100px;
+ 	line-height: 100px;
+ 	margin: 0;
+ }
+
+ .nav-container li {
+ 	list-style: none;
+ 	float: left;
+ 	margin: 0 15px;
+ }
+
+ .nav-container li a {
+ 	text-decoration: none;
+ 	color: #000000;
+ 	transition: .5s;
+	position:relative;
+ }
+
+ .nav-container li a:hover {
+ 	color: #000000;
+ }
+
+/* banner  */
+ #main-banner {
+ 	background-color: red;
+ 	background: url('../img/banner6.jpg') no-repeat;
+ 	background-size: cover;
+ 	background-position: 0 55%;
+ 	position: relative;
+ 	margin-top: 100px;
+ }
+
+ #search-form {
+ 	position: relative;
+ 	width: 80%;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	padding-top: 15em;
+ 	padding-bottom: 15em;
+ 	text-align: center;
+ }
+
+ #search-form h1 {
+ 	font-size: 70px;
+ }
+
+ #search-form p {
+ 	margin-top: 30px;
+ 	margin-bottom: 60px;
+ 	font-size: 25px;
+ 	font-weight: 300px;
+ }
+
+/* Formulario */
+ #search-form input, #search-form select {
+ 	background-color: #FFF;
+ 	border-radius: 5px;
+ 	border-color: transparent;
+ 	padding: 10px 20px;
+ 	font-size: 18px;
+ 	margin: 0 10px;
+ }
+
+#search-form input[type=submit] {
+ 	background-color: #3381f3;
+ 	text-transform: uppercase;
+ 	color: #FFF;
+ 	cursor: pointer;
+ 	transition: 0.5s;
+ }
+
+ #search-form input[type=submit]:hover {
+ 	background-color: #2B79EB;
+ 	/*background-color: #191970;*/
+ }
